@@ -43,7 +43,7 @@ img {
 }
 
 /* =========================================================
-   BRAND LOGO (MENGGUNAKAN logo.jpg + ORNAMEN PESAWAT)
+   BRAND LOGO (SINKRON DENGAN style_contact-galery.css)
    ========================================================= */
 .brand,
 .footer-brand {
@@ -75,12 +75,6 @@ img {
   height: 36px;
   z-index: 3;
   pointer-events: none;
-}
-
-/* Ukuran lebih besar khusus di Footer sesuai gambar referensi */
-.brand-emblem-footer {
-  width: 54px;
-  height: 42px;
 }
 
 .brand-emblem-footer {
@@ -125,8 +119,6 @@ img {
   display: flex;
   align-items: center;
   gap: 32px;
-  margin-left: auto;
-  margin-right: 36px;
 }
 
 .nav-links a {
@@ -179,13 +171,6 @@ img {
 /* =========================================================
    PAGE 1: GALLERY & JOURNAL (index.html)
    ========================================================= */
-.section-title {
-  font-size: 1.65rem;
-  font-weight: 700;
-  color: #111111;
-  margin-bottom: 22px;
-  letter-spacing: -0.02em;
-}
 
 /* Visual Gallery Grid */
 .gallery-section {

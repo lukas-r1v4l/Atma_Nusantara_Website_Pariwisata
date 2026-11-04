@@ -3,33 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atma Nusantara - Tourism Categories</title>
+  <title>Tourism Categories Atma Nusantara</title>
   <link rel="stylesheet" href="style_category.css">
+  <link rel="icon" type="image/png" href="assets/icon/logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="main-wrapper">
-    <!-- Navbar -->
-    <header class="navbar">
-      <div class="logo-container">
-        <img src="./assets/icon/logo.png" alt="Atma Nusantara Logo" class="logo-img">
+    <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="category.html" class="brand">
+        <div class="brand-logo">
+          <img src="assets/icon/logo.png" alt="logo-icon" width="70px" height="70px">
+        </div>
         <span class="brand-name">Atma Nusantara</span>
-      </div>
+      </a>
 
       <nav class="nav-links">
-        <a href="#">Home</a>
-        <a href="#" class="active">Tourism Categories</a>
-        <a href="#">Showcase</a>
-        <a href="#">Gallery &amp; Journal</a>
+        <a href="home.html">Home</a>
+        <a href="category.html" class="active">Tourism Categories</a>
+        <a href="top-destination.html">Top Destination</a>
+        <a href="galery-journal.html">Gallery &amp; Journal</a>
       </nav>
 
-      <a href="#" class="btn-contact">Contact &amp; Partnerships</a>
-    </header>
+      <div class="nav-cta">
+        <a href="contact-partnership.html" class="btn-nav btn-dark">Contact &amp; Partnerships</a>
+      </div>
+    </div>
+  </header>
 
+  <div class="container main-wrapper">
     <!-- Hero / Category Filter Section -->
     <section class="category-banner">
-      <img src="./assets/corak/corak_2.png" alt="Corak Banner" class="banner-ornament">
+      <img src="assets/corak/corak_2.png" alt="Corak Banner" class="banner-ornament">
 
       <div class="banner-content">
         <h1>Select Tourism Category</h1>
@@ -44,60 +51,69 @@
       </div>
     </section>
 
-    <hr class="section-divider">
-
     <!-- Destination Cards Grid -->
     <main class="cards-grid" id="cardsGrid">
       <!-- Kartu akan di-render melalui script.js -->
     </main>
 
-    <!-- Garis pembatas tipis di atas footer -->
-    <hr class="pre-footer-divider">
+  </div>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="footer-upper">
-        <div class="footer-brand">
-          <img src="./assets/icon/logo.png" alt="Atma Nusantara Logo" class="footer-logo">
-          <span class="footer-brand-name">Atma Nusantara</span>
-        </div>
+    <!-- Garis Pemisah Atas Footer -->
+  <div class="container">
+    <hr class="pre-footer-line" />
+  </div>
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Kiri -->
+        <a href="#" class="footer-brand">
+          <div class="brand-emblem brand-emblem-footer">
+            <div class="logo-circle-wrap">
+              <img src="assets/icon/logo.png" alt="Atma Nusantara Logo" class="logo-img" width="60px" height="60px">
+            </div>
+          </div>
+          <span class="brand-name-light">Atma Nusantara</span>
+        </a>
 
-        <div class="footer-BrandArt">
-          <img src="./assets/image/name-brand(footer).png" alt="Atma Nusantara Typography" class="footer-art-img">
+        <!-- Image Watermark Kanan -->
+        <div class="footer-watermark-wrap">
+          <img src="assets/image/name-brand(footer).png" alt="Atma Nusantara Watermark" class="footer-watermark-img" width="650px" height="100px">
         </div>
       </div>
 
-      <hr class="footer-inner-divider">
+      <hr class="footer-divider" />
 
-      <div class="footer-lower">
-        <div class="footer-socials">
+      <div class="footer-bottom">
+        <div class="social-icons">
           <!-- Facebook -->
-          <a href="#" aria-label="Facebook">
-            <img src="./assets/icon/facebook.png" alt="fb" class="fb-icon">
+          <a href="https://facebook.com" aria-label="Facebook">
+            <img src="assets/icon/facebook.png" alt="Facebook Icon" width="30px" height="30px">
           </a>
           <!-- TikTok -->
-          <a href="#" aria-label="TikTok">
-            <img src="./assets/icon/tiktok.png" alt="tiktok" class="tiktok-icon">
+          <a href="https://tiktok.com" aria-label="TikTok">
+            <img src="assets/icon/tiktok.png" alt="TikTok Icon" width="30px" height="30px">
           </a>
           <!-- YouTube -->
-          <a href="#" aria-label="YouTube">
-            <img src="./assets/icon/youtube.png" alt="youtube" class="youtube-icon">
+          <a href="https://youtube.com" aria-label="YouTube">
+            <img src="assets/icon/youtube.png" alt="YouTube Icon" width="30px" height="30px">
           </a>
           <!-- Instagram -->
-          <a href="#" aria-label="Instagram">
-            <img src="./assets/icon/Instagram.png" alt="instagram" class="instagram-icon">
+          <a href="https://instagram.com" aria-label="Instagram">
+            <img src="assets/icon/instagram.png" alt="Instagram Icon" width="30px" height="30px">
           </a>
         </div>
 
-        <p class="footer-copyright">&copy; Atma Nusantara. All Rights Reserved.</p>
+        <p class="copyright">© Atma Nusantara. All Rights Reserved.</p>
 
-        <div class="footer-links">
+        <div class="footer-legal">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
+
 
   <script src="script.js"></script>
 </body>
