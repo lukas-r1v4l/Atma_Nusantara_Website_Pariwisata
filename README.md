@@ -4,7 +4,7 @@
 
 ## Prototype & Wireframe (Figma)
 
-Design pada website ini kami mengambil tema minimalis glassmorphism. Kami menggunakan Figma untuk merancang semua element yang akan digunakan pada website tersebut.
+Design pada website ini kami mengambil tema minimalis glassmorphism. Kami menggunakan Figma untuk merancang semua elemen yang digunakan pada website tersebut.
 
 1. **Gaya Visual Utama (_UI Style_): _Modern Editorial & Neo-Nusantara Heritage_**
    - Memadukan tata letak _modern minimalist_ (dominasi ruang putih bersih, kartu berbingkai halus, dan tombol monokrom hitam tegas) dengan identitas budaya lokal berupa _watermark_ motif ukiran/mandala tradisional Nusantara, sulur emas pada _banner_ kategori, serta tipografi aksara kaligrafi **"Atma Nusantara"** pada _footer_.
@@ -25,29 +25,35 @@ Kelima halaman saling terhubung melalui komponen global **Dynamic Island/Notch N
 
 ```text
 [1. Landing Page / Home (index.html)]
-   ├──> [2. Tourism Categories (kategori.html)]
-   ├──> [3. Showcase (showcase.html)]
+   ├──> [2. Tourism Categories (category.html)]
+   ├──> [3. Top Destination (top-destination.html)]
    ├──> [4. Gallery & Journal (gallery-journal.html)]
-   └──> [5. Contact & Partnerships (kontak-kemitraan.html)]
+   └──> [5. Contact & Partnerships (contact-partnership.html)]
 ```
-
-### Rincian Isi & Tata Letak Setiap Halaman
 
 ## Struktur Folder Proyek
 
 ```text
-atma-nusantara-web/
-├── README.md                       # Dokumentasi singkat, tema desain, & struktur halaman (Berkas #3)
-├── Nama-Tim.txt                    # Data nama tim, NIM, dan nama anggota kelompok (Berkas #5)
-├── index.html                      # Halaman 1: Landing Page (Home)
-├── kategori.html                   # Halaman 2: Tourism Categories
-├── showcase.html                   # Halaman 3: Showcase
-├── gallery-journal.html            # Halaman 4: Gallery & Journal
-├── kontak-kemitraan.html           # Halaman 5: Contact & Partnerships
-├── assets/
-│   ├── css/
-│   │   └── style.css               # Stylesheet kustom (Tema Neo-Nusantara, Flexbox, & CSS Grid)
-│   └── img/                        # Foto destinasi, ornamen batik/sulur, dan aset gambar
-├── wireframe/                      # Ekspor PDF/PNG hasil desain Figma (Berkas #2)
-└── screenshots/                    # Tangkapan layar hasil implementasi Desktop & Mobile (Berkas #4)
+Atma_Nusantara_Website_Pariwisata/
+├── README.md                       # Dokumentasi tema desain, struktur navigasi, & arsitektur proyek
+├── Nama-Tim.txt                    # Data nama tim, NIM, dan nama anggota kelompok
+├── index.html                      # Halaman 1: Landing Page (Hero, Slider Highlight, Showcase, Testimoni)
+├── category.html                   # Halaman 2: Tourism Categories (Filter Dinamis & Katalog Destinasi)
+├── top-destination.html            # Halaman 3: Top Destination (Daftar Peringkat Destinasi Populer)
+├── gallery-journal.html            # Halaman 4: Gallery & Journal (Galeri Visual & Cerita Perjalanan)
+├── contact-partnership.html        # Halaman 5: Contact & Partnerships (Program Kemitraan & Form Kontak)
+└── assets/
+    ├── css/
+    │   ├── global.css              # Reset, typography, container, navbar, & footer bersama (DRY)
+    │   ├── home.css                # Styling khusus Landing Page
+    │   ├── category.css            # Styling khusus Banner Kategori & Card Grid
+    │   ├── top-destination.css     # Styling khusus List Top Destination
+    │   ├── gallery-journal.css     # Styling khusus Visual Gallery & Travel Journal
+    │   └── contact-partnership.css # Styling khusus Program Kemitraan & Form Kontak
+    ├── js/
+    │   └── category.js             # Skrip interaktif filter kategori & render kartu destinasi
+    ├── corak/                      # Motif batik & ornamen khas Nusantara
+    ├── icon/                       # Logo brand & ikon media sosial
+    ├── image/                      # Foto destinasi wisata Nusantara & watermark brand
+    └── user/                       # Foto profil testimoni traveler
 ```

@@ -1,6 +1,11 @@
 /* =========================================================
-   RESET & BASE STYLES
+   ATMA NUSANTARA - GLOBAL & COMMON STYLES
+   Reset, Typography, Container, Navbar, & Footer
    ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* --- Reset & Base Styles --- */
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +14,14 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: #ffffff;
   color: #1a1a1a;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 a {
@@ -36,20 +42,25 @@ img {
   padding: 0 24px;
 }
 
+.main-content,
 .main-wrapper {
   flex: 1;
-  padding-top: 32px;
+  padding-top: 36px;
   padding-bottom: 64px;
 }
 
-/* =========================================================
-   BRAND LOGO (SINKRON DENGAN style_contact-galery.css)
-   ========================================================= */
+/* --- Brand Logo / Emblem --- */
 .brand,
 .footer-brand {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .brand-emblem {
@@ -67,14 +78,11 @@ img {
   object-fit: cover;
 }
 
-.plane-swoosh {
-  position: absolute;
-  left: 0;
-  top: -2px;
-  width: 46px;
-  height: 36px;
-  z-index: 3;
-  pointer-events: none;
+.brand-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #111111;
+  letter-spacing: -0.01em;
 }
 
 .brand-emblem-footer {
@@ -82,15 +90,7 @@ img {
   height: 34px;
 }
 
-.brand-emblem-footer .plane-swoosh {
-  width: 56px;
-  height: 44px;
-  top: -2px;
-}
-
-/* =========================================================
-   HEADER / NAVBAR (SINKRON DENGAN style_contact-galery.css)
-   ========================================================= */
+/* --- Floating Navbar --- */
 .navbar {
   background-color: #ffffff;
   border-bottom: 1px solid #e5e5e5;
@@ -99,7 +99,7 @@ img {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   z-index: 100;
-  box-shadow: 0 10px 03px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
 .nav-container {
@@ -107,13 +107,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.brand-name {
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: #111111;
-  letter-spacing: -0.01em;
 }
 
 .nav-links {
@@ -127,6 +120,7 @@ img {
   font-weight: 500;
   color: #333333;
   padding: 4px 0;
+  transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
@@ -138,8 +132,10 @@ img {
   text-underline-offset: 5px;
   text-decoration-thickness: 1.5px;
   font-weight: 600;
+  color: #000000;
 }
 
+/* Navbar Buttons */
 .btn-nav {
   display: inline-block;
   font-size: 0.78rem;
@@ -157,6 +153,7 @@ img {
 
 .btn-dark:hover {
   background-color: #333333;
+  color: #ffffff;
 }
 
 .btn-outline {
@@ -169,77 +166,7 @@ img {
   background-color: #f3f4f6;
 }
 
-/* =========================================================
-   TOP DESTINATION LIST SECTION
-   ========================================================= */
-.top-destination-box {
-  background-color: #f6f6f6;
-  border-radius: 22px;
-  padding: 42px 48px 56px;
-}
-
-.top-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #000000;
-  margin-bottom: 36px;
-  letter-spacing: -0.02em;
-}
-
-.top-list {
-  list-style: none;
-  max-width: 820px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.top-item {
-  background-color: #eeeeee;
-  border-radius: 12px;
-  padding: 18px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  transition: background-color 0.2s ease, transform 0.15s ease;
-}
-
-.top-item:hover {
-  background-color: #e4e4e4;
-  transform: translateY(-2px);
-}
-
-.top-item-left {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.top-number {
-  min-width: 28px;
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: #111111;
-}
-
-.top-name {
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: #111111;
-}
-
-.top-views {
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: #111111;
-  white-space: nowrap;
-}
-
-/* =========================================================
-   PRE-FOOTER LINE & FOOTER (SINKRON DENGAN style_contact-galery.css)
-   ========================================================= */
+/* --- Pre-Footer Line & Footer --- */
 .pre-footer-line {
   border: none;
   border-top: 1px solid #404040;
@@ -251,6 +178,7 @@ img {
   color: #e5e5e5;
   padding: 26px 0 22px;
   overflow: hidden;
+  margin-top: auto;
 }
 
 .footer-top {
@@ -273,7 +201,6 @@ img {
   letter-spacing: -0.01em;
 }
 
-/* Mengatur gambar name-brand(footer).png agar ukurannya pas dan proporsional */
 .footer-watermark-wrap {
   display: flex;
   align-items: center;
@@ -287,7 +214,6 @@ img {
   object-fit: contain;
 }
 
-/* Garis Pemisah Hitam di Dalam Footer */
 .footer-divider {
   border: none;
   border-top: 1px solid #1f1f1f;
@@ -314,10 +240,12 @@ img {
   color: #a3a3a3;
   display: flex;
   align-items: center;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .social-icons a:hover {
   color: #ffffff;
+  transform: translateY(-2px);
 }
 
 .copyright {
@@ -339,14 +267,8 @@ img {
   text-decoration: underline;
 }
 
-/* =========================================================
-   RESPONSIVE DESIGN
-   ========================================================= */
+/* --- Common Media Queries --- */
 @media (max-width: 900px) {
-  .top-destination-box {
-    padding: 32px 24px 42px;
-  }
-
   .footer-top {
     flex-direction: column;
     align-items: flex-start;
@@ -358,7 +280,7 @@ img {
   }
 
   .footer-watermark-img {
-    height: 210px;
+    height: 140px;
   }
 }
 
@@ -366,7 +288,7 @@ img {
   .nav-container {
     flex-wrap: wrap;
     height: auto;
-    padding: 14px 24px;
+    padding: 14px 20px;
     gap: 12px;
   }
 
@@ -377,28 +299,6 @@ img {
     margin: 0;
     gap: 12px;
     flex-wrap: wrap;
-  }
-
-  .top-title {
-    font-size: 1.5rem;
-    margin-bottom: 24px;
-  }
-
-  .top-item {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 14px 18px;
-    gap: 6px;
-  }
-
-  .top-item-left {
-    gap: 12px;
-  }
-
-  .top-views {
-    align-self: flex-end;
-    font-size: 0.85rem;
-    color: #555555;
   }
 
   .footer-bottom {

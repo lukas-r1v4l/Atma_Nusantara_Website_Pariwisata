@@ -1,0 +1,27 @@
+============================================================
+DATA TIM & ANGGOTA KELOMPOK - UTS FRONT-END DEVELOPMENT
+PROYEK: ATMA NUSANTARA (WEBSITE PARIWISATA)
+============================================================
+
+Nama Tim / Kelompok : [Isi Nama Tim di sini]
+Kelas               : [Isi Kelas Front-End di sini]
+
+Anggota Kelompok:
+1. Nama : [Nama Anggota 1]
+   NIM  : [NIM Anggota 1]
+   Peran: [Misal: UI/UX Designer & Front-End Developer]
+
+2. Nama : [Nama Anggota 2]
+   NIM  : [NIM Anggota 2]
+   Peran: [Misal: Front-End Developer]
+
+3. Nama : [Nama Anggota 3]
+   NIM  : [NIM Anggota 3]
+   Peran: [Misal: Front-End Developer]
+
+Tautan Repositori Git:
+- [Isi Link GitHub / GitLab Repositori di sini]
+
+Tautan Figma:
+- https://www.figma.com/design/O6xCgROX2WqidMAAyswqAM/Atma-Nusantara--Website-Pariwisata-?node-id=0-1&t=KKhy1t828GnyggN2-1
+============================================================

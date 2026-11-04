@@ -1,0 +1,183 @@
+/* =========================================================
+   ATMA NUSANTARA - CONTACT & PARTNERSHIP STYLES
+   Partnership Cards, Inquiry Form, Form Elements & Styling
+   ========================================================= */
+
+.page-main-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 28px;
+  letter-spacing: -0.02em;
+}
+
+/* --- Partnership Section & Cards --- */
+.partnership-section {
+  margin-bottom: 36px;
+}
+
+.partner-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.partner-card {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 22px 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.partner-card h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+.partner-card p {
+  font-size: 0.76rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* --- Inquiry Form Card --- */
+.inquiry-form-card {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 32px 30px;
+  margin-bottom: 40px;
+}
+
+.inquiry-form-card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 22px;
+}
+
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: #111111;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #111111;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 38px;
+  cursor: pointer;
+}
+
+.select-wrapper select:invalid {
+  color: #9ca3af;
+}
+
+.select-wrapper select option {
+  color: #111111;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #374151;
+  border-bottom: 2px solid #374151;
+  transform: translateY(-65%) rotate(45deg);
+  pointer-events: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+
+.btn-submit {
+  background-color: #111111;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 10px 42px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-submit:hover {
+  background-color: #333333;
+  transform: translateY(-1px);
+}
+
+/* --- Responsive Media Queries (Contact) --- */
+@media (max-width: 900px) {
+  .partner-cards-grid,
+  .form-row-two {
+    grid-template-columns: 1fr;
+  }
+}
