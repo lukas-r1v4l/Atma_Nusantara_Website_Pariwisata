@@ -32,13 +32,13 @@ img {
 .container {
   width: 100%;
   max-width: 1120px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 24px;
 }
 
-.main-wrapper {
+.main-content {
   flex: 1;
-  padding-top: 32px;
+  padding-top: 36px;
   padding-bottom: 64px;
 }
 
@@ -176,6 +176,8 @@ img {
   background-color: #f6f6f6;
   border-radius: 22px;
   padding: 42px 48px 56px;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
 
 .top-title {

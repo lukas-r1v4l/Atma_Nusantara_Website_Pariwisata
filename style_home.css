@@ -1,5 +1,5 @@
 /* =========================================================
-   RESET & BASE STYLES (DISINKRONKAN DENGAN style_contact-galery.css)
+   RESET & BASE STYLES
    ========================================================= */
 * {
   margin: 0;
@@ -16,7 +16,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 a {
@@ -35,6 +34,17 @@ img {
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* =========================================================
@@ -465,13 +475,13 @@ img {
 .rating {
   font-size: 13px;    
   font-weight: 600;
-  color: #ffffff;
+  color: #ffffffd7;
   white-space: nowrap;
 }
 
 .featured-info p {
   font-size: 13px;      
-  color: #bbbbbb;           
+  color: #ffffff;           
   line-height: 1.5;     
   margin: 0;
 }
