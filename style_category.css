@@ -33,7 +33,6 @@ img {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
-  padding: 24px;
 }
 
 .main-content {
@@ -254,6 +253,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
   margin: 0 24px;
+  margin-bottom: 50px;
 }
 
 .card {
