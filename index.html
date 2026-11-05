@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Atma Nusantara</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Home - Atma Nusantara</title>
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <!-- FontAwesome untuk ikon media sosial -->
@@ -39,7 +39,7 @@
 
     <!-- Main Section -->
     <section id="home" class="main-section">
-        <img src="assets/image/gunung-bromo.png" alt="Gunung Bromo" class="main-bg-img">
+        <img src="assets/image/new/home/cover/cover-home.jpg" alt="View Cover" class="main-bg-img">
         <div class="main-overlay"></div>
         <div class="main-content">
             <h1>Visit the tourist attractions <br>you'd like to see!</h1>
@@ -55,7 +55,7 @@
             <div class="highlight-gallery-slider">
                 <button class="slider-btn prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
                 <div class="slider-img-card">
-                    <img src="assets/image/candi-borobudur.png" alt="Candi Borobudur">
+                    <img src="assets/image/new/home/iconic/borobudur.jpg" alt="Candi Borobudur">
                     <span>Candi Borobudur</span>
                 </div>
                 <button class="slider-btn next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
@@ -92,19 +92,17 @@
                     <div class="journal-card">
                         <h4>Chasing Morning Mist &amp; Sunrise at Holbung Hill, Samosir</h4>
                         <p>Enjoy a vast, magnificent green savanna blanketed in the mist of dawn, with a magical panorama of Lake Toba from above. It is the perfect place to experience true serenity in the heart of North Sumatra.</p>
-                        <button class="btn-check" onclick="alert('Navigasi ke Detail Jurnal Holbung Hill')">Check
-                            it!</button>
+                        <button class="btn-check" onclick="window.location.href='showcase.html'">Check it!</button>
                     </div>
                     <div class="journal-card">
                         <h4>Witnessing the Golden Sunrise Above the Clouds at Mount Bromo</h4>
                         <p>A vast sea of sand, dramatic plumes of smoke rising from the crater, and the majestic silhouette of Mount Semeru in the distance—the beauty of a golden dawn at Bromo creates a magical landscape that one must witness at least once in a lifetime.</p>
-                        <button class="btn-check" onclick="alert('Navigasi ke Detail Jurnal Holbung Hill')">Check
-                            it!</button>
+                        <button class="btn-check" onclick="window.location.href='showcase.html'">Check it!</button>
                     </div>
                 </div>
                 <div class="journal-right">
                     <div class="featured-card">
-                        <img src="assets/image/danau-toba-2.png" alt="Lake Toba Caldera &amp; Samosir Island">
+                        <img src="assets/image/new/home/the-showcases/danau-toba.jpg" alt="Lake Toba Caldera &amp; Samosir Island">
                         <div class="featured-info">
                             <div class="badge-title">
                                 <h3>Lake Toba Caldera &amp; Samosir Island Geopark</h3>
@@ -219,10 +217,10 @@
     <!-- Script Interaktif Highlight Gallery Slider -->
     <script>
       const highlights = [
-        { name: "Candi Borobudur", image: "assets/image/candi-borobudur.png" },
-        { name: "Danau Toba", image: "assets/image/danau-toba.png" },
-        { name: "Pantai Sorake", image: "assets/image/Lovely-Sorake-Beach.png" },
-        { name: "Rumah Bolon", image: "assets/image/Rumah-Bolon.png" }
+        { name: "Candi Borobudur", image: "assets/image/new/home/iconic/borobudur.jpg" },
+        { name: "Taman Mini Indonesia Indah", image: "assets/image/new/home/iconic/TMI.jpg" },
+        { name: "Raja Ampat", image: "assets/image/new/home/iconic/raja-ampat.jpg" },
+        { name: "Danau Toba", image: "assets/image/new/home/the-showcases/danau-toba.jpg" }
       ];
 
       let currentHighlightIndex = 0;

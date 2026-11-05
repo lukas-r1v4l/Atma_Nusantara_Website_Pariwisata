@@ -21,14 +21,15 @@ Design pada website ini kami mengambil tema minimalis glassmorphism. Kami menggu
 
 ## Struktur Halaman & Alur Navigasi
 
-Kelima halaman saling terhubung melalui komponen global **Dynamic Island/Notch Navbar** di bagian atas dan **Footer Atma Nusantara** di bagian bawah:
+Seluruh halaman saling terhubung melalui komponen global **Dynamic Island/Notch Navbar** di bagian atas dan **Footer Atma Nusantara** di bagian bawah:
 
 ```text
 [1. Landing Page / Home (index.html)]
-   ├──> [2. Tourism Categories (category.html)]
+   ├──> [2. Tourism Categories (category.html)] ──> [Showcase (showcase.html)]
    ├──> [3. Top Destination (top-destination.html)]
    ├──> [4. Gallery & Journal (gallery-journal.html)]
-   └──> [5. Contact & Partnerships (contact-partnership.html)]
+   ├──> [5. Showcase Destinasi (showcase.html)]
+   └──> [6. Contact & Partnerships (contact-partnership.html)]
 ```
 
 ## Struktur Folder Proyek
@@ -38,10 +39,11 @@ Atma_Nusantara_Website_Pariwisata/
 ├── README.md                       # Dokumentasi tema desain, struktur navigasi, & arsitektur proyek
 ├── Nama-Tim.txt                    # Data nama tim, NIM, dan nama anggota kelompok
 ├── index.html                      # Halaman 1: Landing Page (Hero, Slider Highlight, Showcase, Testimoni)
-├── category.html                   # Halaman 2: Tourism Categories (Filter Dinamis & Katalog Destinasi)
+├── category.html                   # Halaman 2: Tourism Categories (Filter Dinamis & 15 Katalog Destinasi)
 ├── top-destination.html            # Halaman 3: Top Destination (Daftar Peringkat Destinasi Populer)
 ├── gallery-journal.html            # Halaman 4: Gallery & Journal (Galeri Visual & Cerita Perjalanan)
-├── contact-partnership.html        # Halaman 5: Contact & Partnerships (Program Kemitraan & Form Kontak)
+├── showcase.html                   # Halaman 5: Showcase Destinasi (Detail Holbung Hill & Ringkasan Info)
+├── contact-partnership.html        # Halaman 6: Contact & Partnerships (Program Kemitraan & Form Kontak)
 └── assets/
     ├── css/
     │   ├── global.css              # Reset, typography, container, navbar, & footer bersama (DRY)
@@ -49,11 +51,13 @@ Atma_Nusantara_Website_Pariwisata/
     │   ├── category.css            # Styling khusus Banner Kategori & Card Grid
     │   ├── top-destination.css     # Styling khusus List Top Destination
     │   ├── gallery-journal.css     # Styling khusus Visual Gallery & Travel Journal
+    │   ├── showcase.css            # Styling khusus Halaman Showcase Destinasi
     │   └── contact-partnership.css # Styling khusus Program Kemitraan & Form Kontak
     ├── js/
-    │   └── category.js             # Skrip interaktif filter kategori & render kartu destinasi
+    │   └── category.js             # Skrip interaktif filter kategori & render kartu destinasi (15 item)
     ├── corak/                      # Motif batik & ornamen khas Nusantara
     ├── icon/                       # Logo brand & ikon media sosial
     ├── image/                      # Foto destinasi wisata Nusantara & watermark brand
+    │   └── new/                    # Foto resolusi tinggi per modul halaman
     └── user/                       # Foto profil testimoni traveler
 ```
