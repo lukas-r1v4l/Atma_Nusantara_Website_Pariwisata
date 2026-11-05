@@ -24,24 +24,28 @@
 .banner {
   position: relative;
   width: 100%;
-  height: 380px;
+  aspect-ratio: 16 / 9;
+  max-height: 520px;
+  min-height: 360px;
   border-radius: 28px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
-  background-color: #d9e2ec;
+  background-color: #0d1522;
 }
 
 .main-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 40%;
+  object-position: center center;
   display: block;
-  transition: transform 0.5s ease;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
+  transition: opacity 0.3s ease;
 }
 
 .banner:hover .main-img {
-  transform: scale(1.02);
+  opacity: 0.98;
 }
 
 .cpt {
@@ -277,7 +281,9 @@
 
 @media (max-width: 680px) {
   .banner {
-    height: 280px;
+    aspect-ratio: 16 / 9;
+    max-height: 320px;
+    min-height: 220px;
   }
 
   .cpt {
