@@ -3,24 +3,32 @@ DATA TIM & ANGGOTA KELOMPOK - UTS FRONT-END DEVELOPMENT
 PROYEK: ATMA NUSANTARA (WEBSITE PARIWISATA)
 ============================================================
 
-Nama Tim / Kelompok : [Isi Nama Tim di sini]
+Nama Tim / Kelompok : [Isi Nama Tim / Kelompok di sini]
 Kelas               : [Isi Kelas Front-End di sini]
 
 Anggota Kelompok:
-1. Nama : [Nama Anggota 1]
-   NIM  : [NIM Anggota 1]
-   Peran: [Misal: UI/UX Designer & Front-End Developer]
+1. Nama : Andreas Sidabutar
+   NIM  : [Isi NIM Anda]
+   Peran: Front-End Developer (Arsitektur & Modularisasi CSS, Showcase Dinamis 15 Destinasi, Optimasi Aset Gambar)
 
 2. Nama : [Nama Anggota 2]
    NIM  : [NIM Anggota 2]
-   Peran: [Misal: Front-End Developer]
+   Peran: Front-End Developer (Halaman Tourism Categories & Logika Filter Interaktif)
 
-3. Nama : [Nama Anggota 3]
-   NIM  : [NIM Anggota 3]
-   Peran: [Misal: Front-End Developer]
+3. Nama : Lukas Rivaldo Harahap
+   NIM  : 251111426
+   Peran: UI/UX Designer & Front-End Developer (Perancangan Desain Figma, Halaman Home & Top Destination)
+
+4. Nama : [Nama Anggota 4]
+   NIM  : [NIM Anggota 4]
+   Peran: Front-End Developer (Halaman Gallery & Journal, Pengelolaan Aset Visual & Layout Editorial)
+
+5. Nama : [Nama Anggota 5]
+   NIM  : [NIM Anggota 5]
+   Peran: Front-End Developer (Halaman Contact & Partnerships, Form Interaktif & Testing Responsivitas)
 
 Tautan Repositori Git:
-- [Isi Link GitHub / GitLab Repositori di sini]
+- https://github.com/lukas-r1v4l/Atma_Nusantara_Website_Pariwisata
 
 Tautan Figma:
 - https://www.figma.com/design/O6xCgROX2WqidMAAyswqAM/Atma-Nusantara--Website-Pariwisata-?node-id=0-1&t=KKhy1t828GnyggN2-1
