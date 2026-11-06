@@ -9,7 +9,7 @@ Kelas               : [Isi Kelas Front-End di sini]
 Anggota Kelompok:
 1. Nama : Andreas Sidabutar
    NIM  : [Isi NIM Anda]
-   Peran: Front-End Developer (Pengembangan Logika JavaScript & Penyesuaian Styling CSS)
+   Peran: Front-End Developer (Logika JavaScript Showcase Dinamis, Mobile Nav Drawer Android, & Optimasi Responsif CSS)
 
 2. Nama : [Nama Anggota 2]
    NIM  : [NIM Anggota 2]
