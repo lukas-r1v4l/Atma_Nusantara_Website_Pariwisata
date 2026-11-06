@@ -3,29 +3,24 @@ DATA TIM & ANGGOTA KELOMPOK - UTS FRONT-END DEVELOPMENT
 PROYEK: ATMA NUSANTARA (WEBSITE PARIWISATA)
 ============================================================
 
-Nama Tim / Kelompok : Tim Pariwisata
-Kelas               : IF-A Pagi
+Nama Tim / Kelompok : [Isi Nama Tim di sini]
+Kelas               : [Isi Kelas Front-End di sini]
 
 Anggota Kelompok:
-1. Nama : Andreas Sidabutar
-   NIM  : 251111627
-   Peran: Front-End Developer (Logika JavaScript Showcase Dinamis, Mobile Nav Drawer Android, & Optimasi Responsif CSS)
+1. Nama : [Nama Anggota 1]
+   NIM  : [NIM Anggota 1]
+   Peran: [Misal: UI/UX Designer & Front-End Developer]
 
-2. Nama : Jose Aldrian Brahmana
-   NIM  : 251110996
-   Peran: Front-End Developer (Pengembangan Halaman Utama / Homepage - HTML & CSS)
+2. Nama : [Nama Anggota 2]
+   NIM  : [NIM Anggota 2]
+   Peran: [Misal: Front-End Developer]
 
-3. Nama : Lukas Rivaldo Harahap
-   NIM  : 251111426
-   Peran: UI/UX Designer & Front-End Developer (Design UI/UX di Figma & Pembuatan page Gallery Journal & page Contact & Partnership - HTML & CSS)
+3. Nama : [Nama Anggota 3]
+   NIM  : [NIM Anggota 3]
+   Peran: [Misal: Front-End Developer]
 
-4. Nama : Wefandi Chaiderson
-   NIM  : 251111468
-   Peran: Front-End Developer (Pembuatan page Showcase - HTML & CSS)
-
-5. Nama : Suwandi
-   NIM  : 251111542
-   Peran: UI/UX Designer & Front-End Dev (Ide design UI/UX & Pembuatan page Tourism Categories - HTML, CSS & JavaScript)
+Tautan Repositori Git:
+- [Isi Link GitHub / GitLab Repositori di sini]
 
 Tautan Figma:
 - https://www.figma.com/design/O6xCgROX2WqidMAAyswqAM/Atma-Nusantara--Website-Pariwisata-?node-id=0-1&t=KKhy1t828GnyggN2-1
