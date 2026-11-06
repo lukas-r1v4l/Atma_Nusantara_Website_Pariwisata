@@ -1,0 +1,307 @@
+/* =========================================================
+   ATMA NUSANTARA - DESTINATION SHOWCASE STYLES
+   Showcase Hero Banner, Floating Blurred Caption,
+   Description Card, Summary Information, & Feature Badges
+   ========================================================= */
+
+:root {
+  --watermark-ornament: url("../../assets/corak/corak_2.png");
+}
+
+.page-main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 26px;
+  letter-spacing: -0.02em;
+}
+
+/* --- Image Banner --- */
+.img {
+  margin: 0 16px 28px;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 520px;
+  min-height: 360px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+  background-color: #0d1522;
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
+  transition: opacity 0.3s ease;
+}
+
+.banner:hover .main-img {
+  opacity: 0.98;
+}
+
+.cpt {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 420px;
+  max-width: 90%;
+  padding: 18px 36px 15px 32px;
+  border-top-left-radius: 26px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.35);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.55);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.55);
+  box-shadow: -4px -4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cpt-name {
+  margin: 0 0 6px 0;
+  font-size: 2.15rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.cpt-det {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.pin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.pin img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* --- Card Boxes --- */
+.box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.box-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* --- Description & Summary Wrapper --- */
+.desc-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.desc {
+  flex: 1.45;
+  min-width: 0;
+}
+
+.desc .box-desc {
+  background: linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  padding: 36px 40px 44px;
+}
+
+.desc .box-desc h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0b0b0b;
+}
+
+.desc .box-desc p {
+  margin: 0 0 12px 0;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #3f3f3f;
+  text-align: justify;
+}
+
+.desc .box-desc p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Summary --- */
+.sum {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+.sum .box-sum {
+  background-color: #ffffff;
+  padding: 30px 32px;
+}
+
+.sum .box-sum h3 {
+  margin: 0 0 22px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0b0b0b;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  font-size: 0.85rem;
+  color: #666666;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+.info span:last-child {
+  font-weight: 600;
+  color: #111111;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.button1 {
+  flex: 1;
+  padding: 11px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button1:hover {
+  background-color: #333333;
+}
+
+.button2 {
+  flex: 1;
+  padding: 11px 20px;
+  background-color: #f3f4f6;
+  color: #111111;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button2:hover {
+  background-color: #e5e7eb;
+}
+
+.sum .box-feat {
+  background: linear-gradient(180deg, #f7f7f7 0%, #ffffff 100%);
+  padding: 22px 28px 26px;
+  border-radius: 14px;
+}
+
+.sum .box-feat h3 {
+  margin: 0 0 14px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0b0b0b;
+}
+
+.badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge-pill {
+  padding: 6px 14px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+}
+
+.badge-pill:hover {
+  background-color: #f3f4f6;
+}
+
+/* --- Responsive Media Queries (Showcase) --- */
+@media (max-width: 900px) {
+  .desc-wrapper {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .img {
+    margin: 0 16px 20px;
+  }
+
+  .sum {
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .banner {
+    aspect-ratio: 16 / 9;
+    max-height: 320px;
+    min-height: 220px;
+  }
+
+  .cpt {
+    min-width: 100%;
+    border-radius: 0;
+    padding: 14px 18px;
+  }
+
+  .cpt-name {
+    font-size: 1.45rem;
+  }
+
+  .desc .box-desc,
+  .sum .box-sum {
+    padding: 24px 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}

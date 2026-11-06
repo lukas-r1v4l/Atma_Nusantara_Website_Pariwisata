@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Showcase (Nama Destinasi)</title>
-    <link rel="stylesheet" href="style_showcase.css">
-    <link rel="icon" type="image/png" href="assets/icon/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcase: Holbung Hill - Atma Nusantara</title>
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/showcase.css">
+  <link rel="icon" type="image/png" href="assets/icon/logo.png">
 </head>
 <body>
 
-    <!-- Header & Navigation -->
-    <header class="navbar">
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
     <div class="container nav-container">
-      <a href="showcase.html" class="brand">
+      <a href="index.html" class="brand">
         <div class="brand-logo">
           <img src="assets/icon/logo.png" alt="logo-icon" width="70px" height="70px">
         </div>
@@ -23,7 +24,7 @@
         <a href="index.html">Home</a>
         <a href="category.html">Tourism Categories</a>
         <a href="top-destination.html">Top Destination</a>
-        <a href="galery-journal.html">Gallery &amp; Journal</a>
+        <a href="gallery-journal.html">Gallery &amp; Journal</a>
       </nav>
 
       <div class="nav-cta">
@@ -32,86 +33,90 @@
     </div>
   </header>
 
-  <div class="container main-wrapper">
-    <!-- Image -->
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="container main-wrapper">
+    <!-- Image Banner -->
     <section class="img">
-        <h1 class="page-main-title">Showcase</h1>
-        <div class="banner">
-            <img src="assets/image/new/tourism-categories/bukit-holbung.jpg" alt="Holbung Mount" class="main-img">
-            <div class="cpt">
-                <h3 class="cpt-name">Holbung Hill, Samosir</h3>
-                <p class="cpt-det">
-                  <span class="pin"> <img src="assets/icon/gps_1.png" alt="GPS Mark" width="50px" height="50px"></span>
-                  <span>North Sumatra, Indonesia &bull; Open Daily (07:00 – 21:00 WIB)</span>
-                </p>
-            </div>
+      <h1 class="page-main-title">Destination Showcase</h1>
+      <div class="banner">
+        <img id="showcaseImg" src="assets/image/new/tourism-categories/bukit-holbung.jpg" alt="Holbung Hill Samosir" class="main-img">
+        <div class="cpt">
+          <h3 id="showcaseTitle" class="cpt-name">Holbung Hill, Samosir</h3>
+          <p class="cpt-det">
+            <span class="pin"><img src="assets/icon/gps_1.png" alt="GPS Mark"></span>
+            <span id="showcaseLocation">North Sumatra, Indonesia &bull; Open Daily (07:00 – 21:00 WIB)</span>
+          </p>
         </div>
+      </div>
     </section>
 
     <div class="desc-wrapper">
-
-    <!-- Description -->
-    <section class="desc">
+      <!-- Description -->
+      <section class="desc">
         <div class="box box-desc">
-          <div class="box-content">
+          <div class="box-content" id="showcaseAbout">
             <h3>About Destination Showcase</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, a nisi quisquam doloremque sit voluptas porro rerum, quaerat sint debitis modi ducimus consectetur. Iste optio, deleniti quidem porro ratione pariatur?</p>
+            <p>
+              Holbung Hill, located in Samosir Regency, North Sumatra, is one of the most stunning panoramic viewpoints overlooking the ancient caldera of Lake Toba. Known affectionately as the "Teletubbies Hill of Sumatra", this destination offers sweeping vistas of undulating emerald-green savanna ridges plunging dramatically into deep blue volcanic waters.
+            </p>
+            <p>
+              Visitors can enjoy refreshing morning breezes, gentle trekking trails that are friendly for all age groups, and world-class vantage points for watching sunrise mist roll across the lake. The surrounding traditional Batak villages also offer authentic cultural experiences and warm local hospitality.
+            </p>
           </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Summary -->
-    <section class="sum">
-      
+      <!-- Summary -->
+      <section class="sum">
         <div class="box box-sum">
           <div class="box-content">
             <h3>Summary Information</h3>
             <div class="info">
               <span>Area Entrance Ticket</span>
-              <span>IDR 15,000 - IDR 25,000</span>
+              <span id="showcaseTicket">IDR 15,000 - IDR 25,000</span>
             </div>
             <div class="info">
-              <span>Area Entrance Ticket</span>
-              <span>IDR 15,000 - IDR 25,000</span>
+              <span>Motorbike / Vehicle Parking</span>
+              <span id="showcaseParking">IDR 5,000 - IDR 10,000</span>
             </div>
             <div class="info">
-              <span>Area Entrance Ticket</span>
-              <span>IDR 15,000 - IDR 25,000</span>
+              <span>Operational Hours</span>
+              <span id="showcaseHours">Daily (07:00 – 21:00 WIB)</span>
             </div>
             <div class="button-group">
-              <button class="button1">Button</button>
-              <button class="button2">Secondary Button</button>
+              <button class="button1" onclick="window.location.href='contact-partnership.html'">Book Local Guide</button>
+              <button class="button2" onclick="window.location.href='category.html'">Back to Catalog</button>
             </div>
           </div>
         </div>
 
         <div class="box box-feat">
-         <div class="box-content">
-           <h3>Available Features</h3>
-           <div class="badge-group">
-             <span class="badge-pill">Homestay &amp; Resort</span>
-             <span class="badge-pill">Panoramic Photo Spot</span>
-             <span class="badge-pill">Local Restaurant &amp; Coffee</span>
-           </div>
-         </div>
-       </div>
-
-    </section>
-
+          <div class="box-content">
+            <h3>Available Features</h3>
+            <div class="badge-group" id="showcaseBadges">
+              <span class="badge-pill">Homestay &amp; Resort</span>
+              <span class="badge-pill">Panoramic Photo Spot</span>
+              <span class="badge-pill">Local Restaurant &amp; Coffee</span>
+              <span class="badge-pill">Camping Ground</span>
+              <span class="badge-pill">Trekking Path</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+  </main>
+
+  <!-- Garis Pemisah Atas Footer -->
+  <div class="container">
+    <hr class="pre-footer-line" />
   </div>
 
-    <!-- Garis Pemisah Atas Footer -->
-    <div class="container">
-      <hr class="pre-footer-line" />
-    </div>
-
-    <!-- Footer -->
-    <footer class="site-footer">
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
         <!-- Brand Kiri -->
-        <a href="#" class="footer-brand">
+        <a href="index.html" class="footer-brand">
           <div class="brand-emblem brand-emblem-footer">
             <div class="logo-circle-wrap">
               <img src="assets/icon/logo.png" alt="Atma Nusantara Logo" class="logo-img" width="60px" height="60px">
@@ -122,7 +127,7 @@
 
         <!-- Image Watermark Kanan -->
         <div class="footer-watermark-wrap">
-          <img src="assets/icon/name-brand(footer).png" alt="Atma Nusantara Watermark" class="footer-watermark-img" width="650px" height="100px">
+          <img src="assets/image/name-brand-footer.png" alt="Atma Nusantara Watermark" class="footer-watermark-img" width="650px" height="100px">
         </div>
       </div>
 
@@ -157,5 +162,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/destinations-data.js"></script>
+  <script src="assets/js/showcase.js"></script>
 </body>
 </html>
