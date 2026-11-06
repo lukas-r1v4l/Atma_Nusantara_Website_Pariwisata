@@ -29,8 +29,27 @@
       <div class="nav-cta">
         <a href="contact-partnership.html" class="btn-nav btn-outline">Contact &amp; Partnerships</a>
       </div>
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Open Mobile Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile Drawer Menu & Overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-label="Mobile Navigation">
+    <button class="menu-close" id="menuClose" aria-label="Close Mobile Menu">&times;</button>
+    <nav class="mobile-nav-links">
+      <a href="index.html">Home</a>
+      <a href="category.html">Tourism Categories</a>
+      <a href="top-destination.html">Top Destination</a>
+      <a href="gallery-journal.html">Gallery &amp; Journal</a>
+      <a href="contact-partnership.html">Contact &amp; Partnership</a>
+    </nav>
+  </aside>
 
   <!-- ================= MAIN CONTENT ================= -->
   <main class="container main-content">
@@ -163,5 +182,6 @@
       </div>
     </div>
   </footer>
+  <script src="assets/js/mobile-nav.js"></script>
 </body>
 </html>
