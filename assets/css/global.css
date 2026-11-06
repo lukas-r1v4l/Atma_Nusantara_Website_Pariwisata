@@ -284,21 +284,175 @@ img {
   }
 }
 
-@media (max-width: 680px) {
+/* =========================================================
+   MOBILE NAVIGATION DRAWER & TOGGLE (RESPONSIVE)
+   ========================================================= */
+
+/* Tombol Hamburger (Desktop: Sembunyi) */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.menu-toggle:hover {
+  background-color: #f3f4f6;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #111111;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+/* Overlay Backdrop Gelap */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Kartu Menu Mobile (Persis seperti di desain acuan) */
+.mobile-menu {
+  position: fixed;
+  top: 16px;
+  right: 0;
+  width: 270px;
+  max-width: 82%;
+  background: #ffffff;
+  border-top-left-radius: 36px;
+  border-bottom-left-radius: 36px;
+  padding: 20px 24px 34px 28px;
+  box-shadow: -8px 12px 30px rgba(0, 0, 0, 0.16);
+  z-index: 999;
+  transform: translateX(115%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* Tombol Tutup (X) */
+.menu-close {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111111;
+  cursor: pointer;
+  align-self: flex-end;
+  line-height: 1;
+  padding: 4px 6px;
+  margin-bottom: 24px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.menu-close:hover {
+  color: #555555;
+  transform: scale(1.1);
+}
+
+/* Daftar Navigasi Mobile (Right Aligned) */
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.mobile-nav-links a {
+  position: relative;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #111111;
+  text-decoration: none;
+  text-align: right;
+  padding-right: 14px;
+  transition: color 0.2s ease;
+}
+
+.mobile-nav-links a:hover {
+  color: #555555;
+}
+
+.mobile-nav-links a.active {
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Titik / Notch Setengah Lingkaran Hitam di Ujung Kanan (Desain Image 1) */
+.mobile-nav-links a.active::after {
+  content: "";
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 22px;
+  background-color: #000000;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+
+/* Garis Pembatas Menu Mobile (Antara Navigasi Konten & Kontak) */
+.mobile-nav-divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e5e7eb;
+  border: none;
+  margin: -2px 0;
+}
+
+@media (max-width: 768px) {
   .nav-container {
-    flex-wrap: wrap;
-    height: auto;
-    padding: 14px 20px;
-    gap: 12px;
+    height: 70px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .nav-links {
-    order: 3;
-    width: 100%;
-    justify-content: space-between;
-    margin: 0;
-    gap: 12px;
-    flex-wrap: wrap;
+  /* Sembunyikan navigasi teks dan tombol desktop */
+  .nav-links,
+  .nav-cta {
+    display: none !important;
+  }
+
+  /* Tampilkan tombol hamburger */
+  .menu-toggle {
+    display: flex;
   }
 
   .footer-bottom {

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery &amp; Journal - Atma Nusantara</title>
-  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/global.css?v=1.2">
   <link rel="stylesheet" href="assets/css/gallery-journal.css">
   <link rel="icon" type="image/png" href="assets/icon/logo.png">
 </head>
@@ -29,8 +29,28 @@
       <div class="nav-cta">
         <a href="contact-partnership.html" class="btn-nav btn-dark">Contact &amp; Partnerships</a>
       </div>
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Open Mobile Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile Drawer Menu & Overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-label="Mobile Navigation">
+    <button class="menu-close" id="menuClose" aria-label="Close Mobile Menu">&times;</button>
+    <nav class="mobile-nav-links">
+      <a href="index.html">Home</a>
+      <a href="category.html">Tourism Categories</a>
+      <a href="top-destination.html">Top Destination</a>
+      <a href="gallery-journal.html" class="active">Gallery &amp; Journal</a>
+      <div class="mobile-nav-divider"></div>
+      <a href="contact-partnership.html">Contact &amp; Partnership</a>
+    </nav>
+  </aside>
 
   <!-- ================= MAIN CONTENT ================= -->
   <main class="container main-content">
@@ -174,5 +194,6 @@
       </div>
     </div>
   </footer>
+  <script src="assets/js/mobile-nav.js?v=1.2"></script>
 </body>
 </html>
