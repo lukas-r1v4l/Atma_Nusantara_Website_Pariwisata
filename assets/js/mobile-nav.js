@@ -1,6 +1,7 @@
 /* =========================================================================
    ATMA NUSANTARA - MOBILE NAVIGATION DRAWER
    Vanilla JavaScript Pemula: Buka & Tutup Menu Mobile (Android/Handphone)
+   Serta Pelacak Otomatis Halaman Aktif (Notch Indikator)
    ========================================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -45,20 +46,40 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Otomatis memberi kelas 'active' pada link yang sesuai dengan halaman saat ini
-  const currentFile = window.location.pathname.split("/").pop() || "index.html";
-  const mobileLinks = mobileMenu.querySelectorAll(".mobile-nav-links a");
+  // 3. Otomatis memastikan notch hitam selalu mengikuti halaman aktif
+  function syncActiveLink() {
+    const rawPath = window.location.pathname.toLowerCase();
+    // Ambil nama file atau slug terakhir (misal 'category.html' atau 'category')
+    const segments = rawPath.split("/").filter(Boolean);
+    const lastSegment = segments.length > 0 ? segments[segments.length - 1] : "";
+    const pageName = lastSegment.replace(".html", "");
 
-  mobileLinks.forEach(function (link) {
-    const href = link.getAttribute("href");
-    if (
-      href === currentFile ||
-      (currentFile === "" && href === "index.html") ||
-      (currentFile.startsWith("showcase.html") && href === "category.html")
-    ) {
-      link.classList.add("active");
-    } else {
-      link.classList.remove("active");
+    const mobileLinks = mobileMenu.querySelectorAll(".mobile-nav-links a");
+    let matched = false;
+
+    mobileLinks.forEach(function (link) {
+      const href = (link.getAttribute("href") || "").toLowerCase();
+      const hrefName = href.replace(".html", "");
+
+      // Cek apakah halaman saat ini cocok dengan href link
+      const isHome = (pageName === "" || pageName === "index" || rawPath.endsWith("/")) && hrefName === "index";
+      const isShowcase = (pageName === "showcase" && hrefName === "category");
+      const isDirectMatch = (pageName !== "" && pageName === hrefName);
+
+      if (isHome || isShowcase || isDirectMatch) {
+        link.classList.add("active");
+        matched = true;
+      } else {
+        link.classList.remove("active");
+      }
+    });
+
+    // Jika belum ada yang cocok dan berada di root domain, default ke 'Home'
+    if (!matched && (pageName === "" || pageName === "index" || rawPath.endsWith("/"))) {
+      const homeLink = mobileMenu.querySelector('.mobile-nav-links a[href="index.html"]');
+      if (homeLink) homeLink.classList.add("active");
     }
-  });
+  }
+
+  syncActiveLink();
 });
