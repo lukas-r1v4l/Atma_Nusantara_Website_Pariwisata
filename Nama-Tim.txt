@@ -9,23 +9,23 @@ Kelas               : [Isi Kelas Front-End di sini]
 Anggota Kelompok:
 1. Nama : Andreas Sidabutar
    NIM  : [Isi NIM Anda]
-   Peran: Front-End Developer (Arsitektur & Modularisasi CSS, Showcase Dinamis 15 Destinasi, Optimasi Aset Gambar)
+   Peran: Front-End Developer (Pengembangan Logika JavaScript & Penyesuaian Styling CSS)
 
 2. Nama : [Nama Anggota 2]
    NIM  : [NIM Anggota 2]
-   Peran: Front-End Developer (Halaman Tourism Categories & Logika Filter Interaktif)
+   Peran: [Isi Peran Anggota 2]
 
 3. Nama : Lukas Rivaldo Harahap
    NIM  : 251111426
-   Peran: UI/UX Designer & Front-End Developer (Perancangan Desain Figma, Halaman Home & Top Destination)
+   Peran: UI/UX Designer & Front-End Developer
 
 4. Nama : [Nama Anggota 4]
    NIM  : [NIM Anggota 4]
-   Peran: Front-End Developer (Halaman Gallery & Journal, Pengelolaan Aset Visual & Layout Editorial)
+   Peran: [Isi Peran Anggota 4]
 
 5. Nama : [Nama Anggota 5]
    NIM  : [NIM Anggota 5]
-   Peran: Front-End Developer (Halaman Contact & Partnerships, Form Interaktif & Testing Responsivitas)
+   Peran: [Isi Peran Anggota 5]
 
 Tautan Repositori Git:
 - https://github.com/lukas-r1v4l/Atma_Nusantara_Website_Pariwisata
